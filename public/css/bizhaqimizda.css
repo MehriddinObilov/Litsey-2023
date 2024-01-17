@@ -1,0 +1,401 @@
+#section-about {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+section .box6 {
+    width: 100%;
+    min-height: 800px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 90px 15px;
+}
+
+section .box6 .boxent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section .box6 h1 {
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+}
+
+section .box6 .card {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+section .box6 .card:hover {
+    height: 420px;
+    cursor: pointer;
+}
+
+section .box6 .card .imgBx {
+    width: 260px;
+    top: -60px;
+    left: 13px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+section .box6 .card .imgBx img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+section .box6 .card .contenter {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+section .box6 .card:hover .contenter {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 60px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 771px) {
+
+    section .box6 .boxent .card:first-of-type,
+    section .box6 .boxent .card:last-of-type {
+        display: none;
+    }
+
+    section .box6 h1 {
+        top: 80px;
+        font-size: 30px;
+    }
+}
+
+section .box6 .div {
+    position: absolute;
+    bottom: 120px;
+}
+
+section .box6 .div a:hover {
+    background-color: white;
+    color: orange;
+}
+
+section .box6 .div strong {
+    background-color: transparent;
+    width: 143px;
+    height: 43px;
+    border: 1px solid #fff;
+    margin-top: -22px;
+    margin-left: 10px;
+    display: block;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+section .box6 .div a {
+    padding: 10px 20px;
+    background-color: orange;
+    transition: 0.3s;
+    color: white;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+#section-about .container .left {
+    width: 500px;
+    height: 475px;
+    border-radius: 18px;
+    background-color: red;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+#section-about .container .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+
+#section-about .container .left:hover img {
+    transform: scale(1.1);
+}
+
+#section-about .container .right {
+    width: 650px;
+    height: auto;
+}
+
+#section-about .container .right .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+#section-about .container .right .top i {
+    font-size: 22px;
+}
+
+#section-about .container .right .top h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+    padding: 1% 2%;
+    margin-top: 1%;
+}
+
+#section-about .container .right .top h2 span {
+    color: #d20014;
+}
+
+#section-about .container .right .bottom h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #333;
+    line-height: 1.5;
+}
+
+#section-about .container .right .bottom h1 span {
+    color: #d20014;
+}
+
+#section-about .container .right .bottom p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333;
+    padding: 3% 0;
+}
+
+#section-vedio {
+    background-color: #fff;
+    position: relative;
+    padding: 5% 0;
+    padding-bottom: 160px;
+    margin-bottom: -150px;
+}
+
+#section-vedio .container .left {
+    max-width: 70%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+
+#section-vedio .container .left .top a {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#section-vedio .container .left .top a i {
+    font-size: 80px;
+    color: #fff;
+}
+
+#section-vedio .container .left .top,
+#section-vedio .container .left .bottom {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    /* height: 400px; */
+}
+
+#section-vedio .container .left .bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+#section-vedio .container .left .top video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#section-vedio .container .left .bottom video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#section-vedio .container .left .bottom .left,
+#section-vedio .container .left .bottom .right {
+    max-width: 49%;
+    height: auto;
+    cursor: pointer;
+}
+
+#section-vedio .container .left .bottom .left span,
+#section-vedio .container .left .bottom .right span {
+    font-size: 15px;
+    color: #8F8F8F;
+    font-weight: 500;
+}
+
+#section-vedio .container .left .bottom .left p,
+#section-vedio .container .left .bottom .right p {
+    font-size: 16px;
+    color: blue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#section-vedio .container .left .bottom .left h1,
+#section-vedio .container .left .bottom .right h1 {
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #000000;
+    line-height: 19px;
+    text-align: justify;
+}
+#section-card .container .cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s ease-in-out;
+    gap: 20px;
+}
+
+
+#section-card .container .cards .pastga {
+    width: 300px;
+    height: 170px;
+    background-color: #ffaa;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#section-card .container .cards .pastga:hover {
+    height: 420px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+#section-card .container .cards .pastga .imgBoxses {
+    width: 260px;
+    height: 60px;
+    top: -55px;
+    left: 15px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
+}
+
+#section-card .container .cards .pastga .imgBoxses img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#section-card .container .cards .pastga .Orqatomon {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+
+}
+
+#section-card .container .cards .pastga:hover .Orqatomon {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 60px;
+    transition: all .5s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+#section-card .container .cards .pastga .Orqatomon h2 {
+    margin: 0.8rem 0;
+    color: var(--color_qora);
+}
+
+#section-card .container .cards .pastga .Orqatomon h2 span {
+    color: red;
+}
+
+#section-card .container .cards .pastga .Orqatomon p {
+    font-size: 16px;
+    padding: 0 2%;
+    text-align: justify;
+}
+
+.img_bo.yuqotilagn {
+    opacity: 1;
+}
+
+
+@media (max-width: 771px) {
+    #section-card .container .cards h1 {
+        top: 80px;
+        font-size: 30px;
+    }
+
+    .img_bo.yuqotilagn {
+        opacity: 0;
+        ;
+    }
+
+    #section-about .container .left {
+        height: 275px;
+    }
+}
+
+header .NavBotom .container .ULBotom .midle {
+    gap: 55px;
+}

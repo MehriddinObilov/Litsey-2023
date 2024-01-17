@@ -1,0 +1,58 @@
+section{
+    width: 100%;
+    height: auto;
+}
+
+section .container{
+    flex-wrap: wrap;
+}
+
+section .container .new_box{
+    width: 550px;
+    height: auto;
+    padding: 20px 10px;
+}
+
+section .container .new_box .top_img{
+    width: 100%;
+    height: 300px;
+}
+
+section .container .new_box .top_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news {
+    margin: 30px auto;
+}
+
+section .container .new_box .text_card{
+    margin-top: 10px;
+}
+section .container .new_box .text_card b{
+    color: #fff;
+}
+
+section .container .new_box .text_card h4{
+    margin-top: 10px;
+    font-size: 22px;
+    color: #fff;
+}
+
+section .container .new_box span{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    color: #fff;
+}
+
+section .container .new_box span a{
+    padding: 5px 22px;
+    background-color: orange;
+    border-radius: 6px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}

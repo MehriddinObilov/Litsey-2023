@@ -1,0 +1,278 @@
+#section-Boss {
+    background-color: aliceblue;
+    padding: 2% 0;
+}
+
+#section-Boss .container .flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+#section-Boss .container .flex .card-slect {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section-Boss .container .flex .card-slect .left {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#section-Boss .container .flex .card-slect .left img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#section-Boss .container .flex .card-slect .right {
+    width: 700px;
+}
+
+#section-Boss .container .flex .card-slect .right h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.3;
+    -webkit-text-stroke: .7px var(--main-bg-color);
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    padding: 2% 0;
+}
+
+
+#section-Boss .container .flex .card-slect .right h1 span {
+    color: rgb(255, 145, 0);
+    font-weight: 900;
+}
+
+
+#section-Boss .container .flex .card-slect .right span {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: red;
+    margin-bottom: 5rem;
+}
+
+#section-Boss .container .flex .card-slect .right p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-top: 1%;
+}
+
+@media (max-width: 1199px) {
+    #section-Boss .container .flex .card-slect .left {
+        order: 1;
+        border-radius: 20px;
+    }
+
+    #section-Boss .container .flex .card-slect .right {
+        order: 2;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    #section-Boss .container .flex .card-slect .left {
+        order: 1;
+        border-radius: 20px;
+    }
+
+    #section-Boss .container .flex .card-slect .right {
+        order: 2;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    #section-Boss .container .flex .card-slect .right h1,
+    #section-Boss .container .flex .card-slect .right span {
+        font-size: 18px;
+    }
+
+    #section-Boss .container .flex .card-slect .right p {
+        font-size: 12px;
+        height: 200px;
+        overflow: auto
+    }
+
+    #section-Boss .container .flex .card-slect .left {
+        width: 337px;
+        height: 400px;
+    }
+
+    #section-Boss .container .flex .card-slect .left img {
+        width: 100%;
+        height: 458px;
+    }
+}
+
+#section-student {
+    padding: 0 2%;
+}
+
+.top {
+    /* width: 80%; */
+    height: auto;
+    margin: 2% auto;
+}
+
+.top h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#section-student table tr td {
+    color: #fff;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid orange;
+}
+
+#section-student table tr td h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: orange;
+}
+
+#section-student table tr td h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: orange;
+}
+
+@media (max-width: 768px) {
+
+    .top {
+        width: 100%;
+    }
+
+    .top h1 {
+        font-size: 24px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .top h1 {
+        font-size: 13px !important;
+    }
+
+    #section-student table tr td h1,
+    #section-student table tr td h2 {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    #section-student table tr td {
+        height: 60px;
+        font-size: 15px;
+    }
+}
+
+#section-Blackboard {
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+#section-Blackboard .container .df-flex,
+#section-Blackboard .container .df-flex .card-Teacher .midle,
+#section-Blackboard .container .df-flex .card-Teacher .icon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#section-Blackboard .container .df-flex .card-Teacher .icon {
+    justify-content: center;
+    display: flex;
+    column-gap: 15px;
+}
+
+#section-Blackboard .container .df-flex .card-Teacher {
+    background: #fff;
+    width: 14rem;
+    padding: 30px 25px;
+    margin: 15px 0 40px 0;
+    border: 3px solid #4545454a;
+    box-shadow: 0 5px 9px #0f390f30;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#section-Blackboard .container .df-flex .card-Teacher:hover,
+#section-Blackboard .container .df-flex .card-Teacher .icon a:hover i {
+    color: orange;
+}
+
+#section-Blackboard .container .df-flex .card-Teacher .top {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#section-Blackboard .container .df-flex .card-Teacher .top img {
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+}
+
+#section-Blackboard .container .df-flex .card-Teacher .midle h2 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #333;
+}
+
+#section-Blackboard .container .df-flex .card-Teacher .midle p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+#section-Blackboard .top h1 {
+    color: #333;
+    padding-top: 5%;
+    text-transform: uppercase;
+}
+
+#section-Blackboard .container .df-flex .card-Teacher .icon a i {
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 778px) {
+    .none_ef{
+        display: none;
+    }
+}
